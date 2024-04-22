@@ -1,0 +1,29 @@
+.wrapper {
+  max-width: 1500px;
+  margin: auto;
+}
+
+#hero {
+  padding: 1rem;
+  background-color: white;
+  height: 40rem;
+  background-image: url("./../gambar/bg.png");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & .img-container {
+    background-color: var(--primer);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+  }
+
+  & img {
+    width: 250px; 
+    filter: drop-shadow(black 0 5px 4px);
+  }
+}
