@@ -10,7 +10,7 @@ body {
 }
 
 .primer {
-  background-color: var(--primer);
+  background-color: var(--primer) !important;
 }
 
 .sekunder {
@@ -18,8 +18,8 @@ body {
 }
 
 .tersier {
-  background-color: var(--tersier);
-  color: black;
+  background-color: var(--tersier) !important;
+  color: black !important;
 }
 
 .row {
@@ -29,7 +29,7 @@ body {
   align-items: center;
 }
 
-h2 {
+h3 {
   margin: 0.5rem;
 }
 
