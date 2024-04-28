@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <meta
       name="description"
       content="Demo aplikasi tugas UI/UX dari kelompok Yuk Kita Jawab"
@@ -17,103 +21,320 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
+    <nav id="mobile-nav">
+      <a href="" class="material-icons active"> home </a>
+      <a href="" class="material-icons-outlined"> account_circle </a>
+      <a href="" class="material-icons-outlined"> rate_review </a>
+      <a href="" class="material-icons-outlined"> search </a>
+      <a href="" class="material-icons-outlined"> category </a>
+    </nav>
+
     <div class="wrapper">
-      <div class="nav-container">
-        <nav id="nav-bar">
+      <aside class="left">
+        <nav id="side-nav">
           <div class="row">
-            <img src="gambar/logo.jpg" alt="logo" />
-            <h3 class="desktop">Yuk Kita Jawab</h3>
+            <img src="gambar/logo.jpg" alt="Logo" />
+            <h3>Yuk Kita Jawab</h3>
           </div>
 
-          <div class="row desktop-only">
-            <a href="">Home</a>
-            <a href="">Link 1</a>
-            <a href="">Link 2</a>
-            <a href="">Link 3</a>
-          </div>
+          <a href="" class="text-box row active">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+          <a href="" class="text-box row">
+            <i class="material-icons">account_circle</i>
+            Profil
+          </a>
+          <a href="" class="text-box row">
+            <i class="material-icons-outlined">search</i>
+            Search
+          </a>
+          <a href="" class="text-box row">
+            <i class="material-icons-outlined">category</i>
+            Mata Pelajaran
+          </a>
+          <a href="" class="text-box row">
+            <i class="material-icons-outlined">info</i>
+            Tentang Kami
+          </a>
 
-          <div class="desktop-only">
-            <a href="./login.html" class="button primer"> Login </a>
-            <a href="./daftar.html" class="button sekunder"> Daftar </a>
-          </div>
-
-          <div id="mobile-menu-toggle" class="row sekunder">
-            <i class="material-icons-outlined">menu</i>
-          </div>
+          <button class="sekunder row">
+            <i class="material-icons-outlined">rate_review</i>
+            Buat Pertanyaan
+          </button>
         </nav>
-      </div>
+      </aside>
+      <main>
+        <h1>
+          <span style="color: var(--primer)">Selamat </span>
+          <span style="color: var(--sekunder)">Datang </span> 👋
+        </h1>
 
-      <menu id="mobile-menu">
-        <div>
-          <div id="mobile-menu-toggle" class="row sekunder">
-            <i class="material-icons-outlined">close</i>
-          </div>
+        <h4>Mapel paling populer minggu ini</h4>
+        <div class="mapel">
+          <a class="row">
+            <img src="gambar/mtk.png" alt="ikon mata pelajaran Matematika" />
+            <span>Matematika</span>
+            <span>20+ pertanyaan</span>
+          </a>
+          <a class="row">
+            <img src="gambar/ips.png" alt="ikon mata pelajaran IPS" />
+            <span>IPS</span>
+            <span>18+ pertanyaan</span>
+          </a>
         </div>
 
-        <a href="" class="text-box">
-          <span class="material-icons-outlined">home</span>
-          <span>Home</span>
-        </a>
+        <h4>Pertanyaan trending minggu ini</h4>
+        <article>
+          <div class="tags row">
+            <span>IPS</span>
+            <span>Kelas 6</span>
+            <span>+5 poin</span>
+          </div>
+          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
 
-        <a href="" class="text-box">
-          <span class="material-icons-outlined">category</span>
-          <span>Link 1</span>
-        </a>
+          <div class="row">
+            <div class="poster row">
+              <img
+                src="https://ui-avatars.com/api/?name=M+T&size=120&bold=true&color=ffffff&background=A50AB3"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>5 hari lalu</p>
+              </div>
+            </div>
 
-        <a href="" class="text-box">
-          <span class="material-icons-outlined">chat</span>
-          <span>Link 2</span>
-        </a>
+            <div class="statistik">
+              <div class="row">
+                <i class="material-icons-outlined">thumb_up</i>
+                15
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">forum</i>
+                23
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
 
-        <a href="" class="text-box">
-          <span class="material-icons-outlined">leaderboard</span>
-          <span>Link 3</span>
-        </a>
+        <article>
+          <div class="tags row">
+            <span>Seni Budaya</span>
+            <span>Kelas 4</span>
+            <span>+3 poin</span>
+          </div>
+          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+
+          <div class="row">
+            <div class="poster row">
+              <img
+                src="https://ui-avatars.com/api/?name=R+M&size=120&bold=true&color=ffffff&background=546E1D"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>3 hari lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="row">
+                <i class="material-icons-outlined">thumb_up</i>
+                11
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">forum</i>
+                16
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="tags row">
+            <span>IPA</span>
+            <span>Kelas 6</span>
+            <span>+4 poin</span>
+          </div>
+          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+
+          <div class="row">
+            <div class="poster row">
+              <img
+                src="https://ui-avatars.com/api/?name=A+C&size=120&bold=true&color=ffffff&background=145062"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>4 hari lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="row">
+                <i class="material-icons-outlined">thumb_up</i>
+                8
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">forum</i>
+                4
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
 
         <br />
-
-        <a href="./login.html" class="button" style="text-align: center"
-          >Login</a
-        >
-        <a
-          href="./daftar.html"
-          class="button sekunder"
-          style="text-align: center"
-          >Daftar</a
-        >
-      </menu>
-
-      <section id="hero">
-        <div class="img-container">
-          <img
-            src="gambar/hero.png"
-            alt="kartun siswa yang sedang melambaikan tangan"
-          />
-        </div>
-        <h1 class="text-box">
-          <span style="color: var(--primer)">Malu bertanya</span>
-          <span style="color: var(--sekunder)"> sesat dijalan!</span>
+        <h1>
+          <span style="color: var(--primer)">Jadilah Pertama </span>
+          <span style="color: var(--sekunder)">yang Menjawab </span>✍️
         </h1>
-        <div class="row">
-          <a href="./login.html" class="button besar">Login</a>
-          <a href="./daftar.html" class="button besar tersier"
-            >Gabung sekarang</a
-          >
-        </div>
-      </section>
+        <h4>Pertanyaan terbaru</h4>
 
-      <section id="about">
-        <h2>Tentang Kami 👋</h2>
-        <p>
-          Ini adalah demo
-          <span style="color: var(--sekunder); font-weight: 700"
-            >Yuk Kita Jawab</span
-          >
-          yg merupakan aplikasi tanya-jawab di bidang edukasi. Proyek dibuat
-          untuk memenuhi nilai tugas akhir di mata perkuliahan
-          <span style="color: var(--primer); font-weight: 700">UI/UX</span>.
-        </p>
-      </section>
+        <article>
+          <div class="tags row">
+            <span>Matematika</span>
+            <span>Kelas 6</span>
+            <span>Belum Dijawab</span>
+            <span>+12 poin</span>
+          </div>
+          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+
+          <div class="row">
+            <div class="poster row">
+              <img
+                src="https://ui-avatars.com/api/?name=I+K&size=120&bold=true&color=ffffff&background=BD3E54"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>2 menit lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="row">
+                <i class="material-icons-outlined">thumb_up</i>
+                0
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">forum</i>
+                0
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="tags row">
+            <span>Pendidikan Agama</span>
+            <span>Kelas 5</span>
+            <span>Belum Dijawab</span>
+            <span>+8 poin</span>
+          </div>
+          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+
+          <div class="row">
+            <div class="poster row">
+              <img
+                src="https://ui-avatars.com/api/?name=F+L&size=120&bold=true&color=ffffff&background=17398C"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>17 menit lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="row">
+                <i class="material-icons-outlined">thumb_up</i>
+                0
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">forum</i>
+                0
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="tags row">
+            <span>IPS</span>
+            <span>Kelas 4</span>
+            <span>Belum Dijawab</span>
+            <span>+9 poin</span>
+          </div>
+          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+
+          <div class="row">
+            <div class="poster row">
+              <img
+                src="https://ui-avatars.com/api/?name=Z+E&size=120&bold=true&color=ffffff&background=D651F9"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>30 menit lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="row">
+                <i class="material-icons-outlined">thumb_up</i>
+                0
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">forum</i>
+                0
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="row">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <br />
+        <br />
+        <br />
+        <br />
+      </main>
+      <aside class="right"></aside>
     </div>
   </body>
 </html>
