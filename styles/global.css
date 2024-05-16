@@ -71,7 +71,7 @@ button,
   }
 }
 
-input:not([type="checkbox"]) {
+input:not([type="checkbox"]), select {
   padding: 0.8rem 1rem;
   border: none;
   border-radius: 5px;
@@ -91,10 +91,34 @@ label {
   font-size: 0.9rem;
 }
 
-input[type="checkbox"] {
-  background-color: red;
+input[type="checkbox"] { 
   inline-size: 1.4rem;
   block-size: 1.4rem;
+}
+
+article {
+  box-sizing: border-box;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 2px solid rgba(136, 136, 136, 0.205);
+  font-weight: 500;
+
+  &:hover {
+    background-color: azure;
+  }
+
+  .text-box {
+    display: inline-block;
+  }
+
+  .row:nth-of-type(2) {
+    align-items: end;
+    justify-content: space-between;
+
+    p {
+      margin: 0;
+    }
+  }
 }
 
 .wrapper {
@@ -156,6 +180,18 @@ main {
 
 aside.right {
   width: 20%;
+
+  & .fixed {
+    position: fixed;
+    padding-right: 1rem;
+  }
+
+  article {
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    margin: 0.25rem 0;
+  }
 }
 
 #mobile-nav {
