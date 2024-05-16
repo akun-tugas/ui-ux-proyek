@@ -1,0 +1,22 @@
+main {
+  height: 100vh;
+  
+  .row {
+    margin: 1rem 0;
+    justify-content: space-between;
+  
+    > * {
+      flex: 1;
+    }
+  }
+
+  select {
+    margin-top: 0.5rem;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    inline-size: 100%;
+    margin: 0;
+  }
+}

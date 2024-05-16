@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuk Kita Jawab</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Demo aplikasi tugas UI/UX dari kelompok Yuk Kita Jawab"
+    />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/search.css" />
+  </head>
+  <body>
+    <nav id="mobile-nav">
+      <a href="./index.html" class="material-icons-outlined"> home </a>
+      <a href="" class="material-icons-outlined"> account_circle </a>
+      <a href="" class="material-icons-outlined"> rate_review </a>
+      <a href="./search.html" class="material-icons-outlined active"> search </a>
+      <a href="./mapel.html" class="material-icons-outlined"> category </a>
+    </nav>
+
+    <div class="wrapper">
+      <aside class="left">
+        <nav id="side-nav">
+          <div class="row">
+            <img src="gambar/logo.jpg" alt="Logo" />
+            <h3>Yuk Kita Jawab</h3>
+          </div>
+
+          <a href="./index.html" class="text-box row">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+          <a href="" class="text-box row">
+            <i class="material-icons">account_circle</i>
+            Profil
+          </a>
+          <a href="./search.html" class="text-box row active">
+            <i class="material-icons-outlined">search</i>
+            Search
+          </a>
+          <a href="./mapel.html" class="text-box row">
+            <i class="material-icons-outlined">category</i>
+            Mata Pelajaran
+          </a>
+          <a href="" class="text-box row">
+            <i class="material-icons-outlined">info</i>
+            Tentang Kami
+          </a>
+
+          <button class="sekunder row">
+            <i class="material-icons-outlined">rate_review</i>
+            Buat Pertanyaan
+          </button>
+        </nav>
+      </aside>
+      <main>
+        <h1>
+          <span style="color: var(--primer)">Cari </span>
+          <span style="color: var(--sekunder)">Pertanyaan </span> 🔍
+        </h1>
+
+        <label for=""></label>
+        <div class="input-container">
+          <i class="material-icons-outlined">search</i>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Mengapa lorem ipsum? (contoh)"
+          />
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="">Mata Pelajaran</label>
+            <select name="mapel" id="mapel">
+              <option selected>Semua Mapel</option>
+              <option>Matematika</option>
+              <option>Penjaskes</option>
+              <option>IPS</option>
+              <option>Bahasa Indonesia</option>
+              <option>IPA</option>
+              <option>Bahasa Inggris</option>
+              <option>Seni Budaya</option>
+              <option>PKN</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Diurut berdasarkan</label>
+            <select name="urutan" id="urutan">
+              <option selected>Jumlah Jawaban</option>
+              <option>Jumlah Like</option>
+              <option>Terbaru</option>
+              <option>Terlama</option>
+            </select>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <button> 
+            Search 
+        </button>
+      </main>
+      <aside class="right">
+        <div class="fixed">
+          <div class="row">
+            <a href="./login.html" class="button">Login</a>
+            <a href="./daftar.html" class="button sekunder">Daftar</a>
+          </div>
+
+          <h5>Pertanyaan Trending</h5>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <h5>Pertanyaan Terbaru</h5>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

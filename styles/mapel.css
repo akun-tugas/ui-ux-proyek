@@ -1,0 +1,23 @@
+.mapel {
+  columns: 2;
+
+  img {
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  a {
+    -webkit-column-break-inside: avoid;
+    gap: 0rem; 
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-color: var(--primer);
+    box-shadow: var(--primer) 4px 4px 0;
+
+    > :last-child {
+      opacity: 0.75;
+      font-size: 0.8rem;
+    }
+  }
+}
