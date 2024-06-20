@@ -12,13 +12,15 @@
       name="description"
       content="Demo aplikasi tugas UI/UX dari kelompok Yuk Kita Jawab"
     />
-    <script src="./script.js" defer></script>
+    
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/auth.css" />
   </head>
   <body>
-    <div class="text-box">
-      <img src="gambar/logo.jpg" alt="logo aplikasi" />
+    <form class="text-box">
+      <a href="./">
+        <img class="logo" src="gambar/logo.jpg" alt="logo aplikasi" />
+      </a>
       <hr />
 
       <h2>
@@ -32,8 +34,6 @@
         <input type="text" name="nama" placeholder="Masukan nama" />
       </div>
 
-      <br />
-
       <label for="email">Email</label>
       <div class="input-container">
         <i class="material-icons-outlined">mail</i>
@@ -43,8 +43,6 @@
           placeholder="Masukan alamat email anda"
         />
       </div>
-
-      <br />
 
       <label for="password">Password</label>
       <div class="input-container">
@@ -56,15 +54,13 @@
         />
       </div>
 
-      <br />
-
       <label for="password-ulang">Ulangi Password</label>
       <div class="input-container">
         <i class="material-icons-outlined">key</i>
         <input type="password" name="password-ulang" />
       </div>
 
-      <div class="row syarat">
+      <div class="flex syarat">
         <input type="checkbox" name="syarat ketentuan" />
         <p>Saya setuju dengan syarat & ketentuan</p>
       </div>
@@ -79,6 +75,6 @@
           Login
         </a>
       </p>
-    </div>
+    </form>
   </body>
 </html>

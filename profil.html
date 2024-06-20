@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuk Kita Jawab</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Demo aplikasi tugas UI/UX dari kelompok Yuk Kita Jawab"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/profil.css" />
+  </head>
+  <body>
+    <nav id="mobile-nav">
+      <a href="./index.html" class="material-icons-outlined"> home </a>
+      <a href="./profil.html" class="material-icons-outlined active">
+        account_circle
+      </a>
+      <a href="./buat_pertanyaan.html" class="material-icons-outlined">
+        rate_review
+      </a>
+      <a href="./search.html" class="material-icons-outlined"> search </a>
+      <a href="./mapel.html" class="material-icons-outlined"> category </a>
+    </nav>
+
+    <div class="layout">
+      <aside class="left">
+        <nav id="side-nav">
+          <div class="flex">
+            <img src="gambar/logo.jpg" alt="Logo" />
+            <h3>Yuk Kita Jawab</h3>
+          </div>
+
+          <a href="./index.html" class="text-box flex">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+          <a href="./profil.html" class="text-box flex active">
+            <i class="material-icons">account_circle</i>
+            Profil
+          </a>
+          <a href="./search.html" class="text-box flex">
+            <i class="material-icons-outlined">search</i>
+            Search
+          </a>
+          <a href="./mapel.html" class="text-box flex">
+            <i class="material-icons-outlined">category</i>
+            Mata Pelajaran
+          </a>
+          <a href="./admin.html" class="text-box flex">
+            <i class="material-icons-outlined">monitor</i>
+            Dashboard Admin
+          </a>
+
+          <a href="./buat_pertanyaan.html">
+            <button class="sekunder flex">
+              <i class="material-icons-outlined">rate_review</i>
+              Buat Pertanyaan
+            </button>
+          </a>
+        </nav>
+      </aside>
+      <main>
+        <h1 style="color: var(--sekunder)">Profil</h1>
+
+        <div class="foto">
+          <div class="flex">
+            <p>01/06/2024</p>
+            <p>Tanggal Join</p>
+          </div>
+          <img src="./gambar/user.jpg" alt="foto profil user" width="100px" />
+          <div class="flex">
+            <p>🎉 125</p>
+            <p>Total Poin</p>
+          </div>
+        </div>
+
+        <h2>Nama Pengguna</h2>
+
+        <div class="statistik-profil">
+          <div class="text-box">
+            <p>1</p>
+            <p>Pertanyaan</p>
+          </div>
+          <div class="text-box">
+            <p>2</p>
+            <p>Jawaban</p>
+          </div>
+          <div class="text-box">
+            <p>5.0</p>
+            <p>Rating</p>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <a class="active" onclick="gantiTab(0)">Pertanyaan</a>
+          <a onclick="gantiTab(1)">Jawaban</a>
+          <a onclick="gantiTab(2)">Bookmark</a>
+        </div>
+
+        <div class="tab"></div>
+      </main>
+      <aside class="right">
+        <div class="fixed">
+          <div class="flex">
+            <a href="./login.html" class="button">Login</a>
+            <a href="./daftar.html" class="button sekunder">Daftar</a>
+          </div>
+
+          <h5>Pertanyaan Trending</h5>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <h5>Pertanyaan Terbaru</h5>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+        </div>
+      </aside>
+    </div>
+
+    <script>
+      const tabs = document.querySelector(".tabs").children;
+      const tab = document.querySelector(".tab");
+      let indexTab = 0;
+
+      function gantiTab(i) {
+        const e = tabs[indexTab];
+        e.classList.remove("active");
+
+        switch (i) {
+          case 0:
+            tab.innerHTML = `          <article>
+            <div class="tags flex">
+              <span>IPS</span>
+              <span>Kelas 6</span>
+              <span>+5 poin</span>
+            </div>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+
+            <div class="flex">
+              <div class="poster flex">
+                <img
+                  src="http://192.168.1.28:5500/gambar/user.jpg"
+                  alt="Foto profil poster"
+                />
+                <div>
+                  <a>Nama Pengguna</a>
+                  <p>5 hari lalu</p>
+                </div>
+              </div>
+
+              <div class="statistik">
+                <div class="flex">
+                  <i class="material-icons-outlined">thumb_up</i>
+                  15
+                </div>
+                <div class="flex">
+                  <i class="material-icons-outlined">forum</i>
+                  23
+                </div>
+                <div class="flex">
+                  <i class="material-icons-outlined">bookmark</i>
+                </div>
+                <div class="flex">
+                  <i class="material-icons-outlined">share</i>
+                </div>
+              </div>
+            </div>
+          </article>`;
+            break;
+          case 1:
+            tab.innerHTML = `<article class="jawaban">
+          <div class="statistik">
+            <p>Jawaban Terbaik</p>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+
+          <div class="poster flex">
+            <img src="./gambar/user.jpg" alt="Foto profil poster" />
+            <div>
+              <a>Nama Pengguna</a>
+              <p>5 hari lalu</p>
+            </div>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quasi
+          </p>
+        </article>`.repeat(2);
+            break;
+          case 2:
+            tab.innerHTML = `<div>
+            <h2 style="color: var(--primer);">Bookmark Kosong</h2>
+            <p style="text-align: center;">Anda belum menyimpan apapun</p>
+        </div>`;
+            break;
+        }
+
+        tabs[i].classList.add("active");
+        indexTab = i;
+      }
+
+      gantiTab(indexTab);
+    </script>
+  </body>
+</html>

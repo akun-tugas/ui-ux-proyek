@@ -1,0 +1,39 @@
+main {
+  .profil {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin: 0.2rem 0;
+    }
+  }
+
+  #deskripsi {
+    font-weight: 500;
+  }
+
+  form {
+    margin-top: 1rem;
+
+    textarea {
+        min-height: 100px;
+    }
+    
+    button {
+        margin: 0.5rem 0;
+    }
+  }
+
+  .statistik-post {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1.5rem;
+    opacity: 0.4;
+  }
+}

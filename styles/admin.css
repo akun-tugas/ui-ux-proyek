@@ -1,0 +1,65 @@
+.statistik {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    p {
+        margin: 0;
+    }
+
+    div {
+        min-width: 120px;
+        display: flex; 
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        border: 2px solid black;
+        box-shadow: 4px 4px var(--primer);
+
+        p:first-of-type {
+            margin-top: 0.4rem;
+            font-weight: 600;
+            color: var(--primer);
+            font-size: 1.8rem ;
+        }
+
+        :last-child {
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+
+        &:nth-of-type(1) i {
+            background-color: color-mix(in srgb, steelblue, white 90%);
+            color: steelblue;
+        }
+        
+        &:nth-of-type(2) i {
+            background-color: color-mix(in srgb, limegreen, white 90%);
+            color: limegreen;
+        }
+
+        &:nth-of-type(3) i {
+            background-color: color-mix(in srgb, grey, white 90%);
+            color: grey;
+        }
+
+        &:nth-of-type(4) i {
+            background-color: color-mix(in srgb, teal, white 90%);
+            color: teal;
+        } 
+
+        &:nth-of-type(5) i {
+            background-color: color-mix(in srgb, crimson, white 90%);
+            color: crimson;
+        }
+    }
+
+    i {
+        font-size: 2rem;
+        padding: 0.5rem 1rem; 
+        border-radius: 8px;
+    }
+}

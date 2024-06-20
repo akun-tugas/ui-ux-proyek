@@ -12,13 +12,15 @@
       name="description"
       content="Demo aplikasi tugas UI/UX dari kelompok Yuk Kita Jawab"
     />
-    <script src="./script.js" defer></script>
+    
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/auth.css" />
   </head>
   <body>
-    <div class="text-box">
-      <img src="gambar/logo.jpg" alt="logo aplikasi" />
+    <form class="text-box">
+      <a href="./">
+        <img class="logo" src="gambar/logo.jpg" alt="logo aplikasi" />
+      </a>
       <hr />
 
       <h2>
@@ -32,18 +34,26 @@
         <input type="text" placeholder="Masukan alamat email anda" />
       </div>
 
-      <br />
-
-      <label for="">Email</label>
+      <label for="">Password</label>
       <div class="input-container">
         <i class="material-icons-outlined">key</i>
         <input type="password" placeholder="Masukan password anda" />
       </div>
 
-      <br />
+      <p style="text-align: center">atau</p>
+
+      <div class="google">
+        <img
+          src="https://cdn-icons-png.flaticon.com/256/2875/2875331.png"
+          alt="logo google"
+          width="35px"
+          height="35px"
+        />
+        <p>Lanjut dengan google</p>
+      </div>
 
       <div class="lupa-pw">
-        <div class="row">
+        <div class="flex">
           <input type="checkbox" name="" id="" />
           <p>Ingat saya</p>
         </div>
@@ -51,14 +61,14 @@
         <p>Lupa Password ?</p>
       </div>
 
-      <br />
-
       <button class="primer">Login</button>
 
       <p style="font-weight: 500; text-align: center">
         Pengguna baru?
-        <a href="./daftar.html" style="color: var(--primer); font-weight: 700">Daftar</a>
+        <a href="./daftar.html" style="color: var(--primer); font-weight: 700"
+          >Daftar</a
+        >
       </p>
-    </div>
+    </form>
   </body>
 </html>

@@ -1,22 +1,45 @@
 main {
   height: 100vh;
-  
-  .row {
-    margin: 1rem 0;
-    justify-content: space-between;
-  
-    > * {
-      flex: 1;
+
+  .search {
+    .flex {
+      margin: 1rem 0;
+      justify-content: space-between;
+
+      > * {
+        flex: 1;
+      }
+    }
+
+    select {
+      margin-top: 0.5rem;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      inline-size: 100%;
+      margin: 0;
     }
   }
 
-  select {
-    margin-top: 0.5rem;
+  .hasil {
+    display: none;
+
+    .error {
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 200px;
+      }
+    }
   }
 
-  button {
-    padding: 1rem 2rem;
-    inline-size: 100%;
-    margin: 0;
+  .loading {
+    display: none;
+    margin-top: 3rem;
+    justify-content: center;
   }
 }

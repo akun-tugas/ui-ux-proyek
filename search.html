@@ -16,52 +16,56 @@
       name="description"
       content="Demo aplikasi tugas UI/UX dari kelompok Yuk Kita Jawab"
     />
-    <script src="./script.js" defer></script>
+    
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/search.css" />
   </head>
   <body>
     <nav id="mobile-nav">
       <a href="./index.html" class="material-icons-outlined"> home </a>
-      <a href="" class="material-icons-outlined"> account_circle </a>
-      <a href="" class="material-icons-outlined"> rate_review </a>
-      <a href="./search.html" class="material-icons-outlined active"> search </a>
+            <a href="./profil.html" class="material-icons-outlined"> account_circle </a>
+      <a href="./buat_pertanyaan.html" class="material-icons-outlined"> rate_review </a>
+      <a href="./search.html" class="material-icons-outlined active">
+        search
+      </a>
       <a href="./mapel.html" class="material-icons-outlined"> category </a>
     </nav>
 
-    <div class="wrapper">
+    <div class="layout">
       <aside class="left">
         <nav id="side-nav">
-          <div class="row">
+          <div class="flex">
             <img src="gambar/logo.jpg" alt="Logo" />
             <h3>Yuk Kita Jawab</h3>
           </div>
 
-          <a href="./index.html" class="text-box row">
+          <a href="./index.html" class="text-box flex">
             <i class="material-icons">home</i>
             Home
           </a>
-          <a href="" class="text-box row">
+          <a href="./profil.html" class="text-box flex">
             <i class="material-icons">account_circle</i>
             Profil
           </a>
-          <a href="./search.html" class="text-box row active">
+          <a href="./search.html" class="text-box flex active">
             <i class="material-icons-outlined">search</i>
             Search
           </a>
-          <a href="./mapel.html" class="text-box row">
+          <a href="./mapel.html" class="text-box flex">
             <i class="material-icons-outlined">category</i>
             Mata Pelajaran
           </a>
-          <a href="" class="text-box row">
-            <i class="material-icons-outlined">info</i>
-            Tentang Kami
+          <a href="./admin.html" class="text-box flex">
+            <i class="material-icons-outlined">monitor</i>
+            Dashboard Admin
           </a>
 
-          <button class="sekunder row">
-            <i class="material-icons-outlined">rate_review</i>
-            Buat Pertanyaan
-          </button>
+          <a href="./buat_pertanyaan.html">
+            <button class="sekunder flex">
+              <i class="material-icons-outlined">rate_review</i>
+              Buat Pertanyaan
+            </button>
+          </a>
         </nav>
       </aside>
       <main>
@@ -70,53 +74,60 @@
           <span style="color: var(--sekunder)">Pertanyaan </span> 🔍
         </h1>
 
-        <label for=""></label>
-        <div class="input-container">
-          <i class="material-icons-outlined">search</i>
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Mengapa lorem ipsum? (contoh)"
-          />
+        <div class="search">
+          <div class="input-container">
+            <i class="material-icons-outlined">search</i>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              autocomplete="off"
+              placeholder="Mengapa diperlukan riset sebelum membuat... (contoh)"
+            />
+          </div>
+
+          <div class="flex">
+            <div>
+              <label for="">Mata Pelajaran</label>
+              <select name="mapel" id="mapel">
+                <option selected>Semua Mapel</option>
+                <option>Matematika</option>
+                <option>Penjaskes</option>
+                <option>IPS</option>
+                <option>Bahasa Indonesia</option>
+                <option>IPA</option>
+                <option>Bahasa Inggris</option>
+                <option>Seni Budaya</option>
+                <option>PKN</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Kelas</label>
+              <select name="urutan" id="urutan">
+                <option selected>Semua Tingkat</option>
+                <option>Kelas 1</option>
+                <option>Kelas 2</option>
+                <option>Kelas 3</option>
+                <option>Kelas 4</option>
+                <option>Kelas 5</option>
+                <option>Kelas 6</option>
+              </select>
+            </div>
+          </div>
+
+          <button onclick="search()">Search</button>
+          <div class="loading">
+            <img src="./gambar/loading.gif" width="100px" />
+          </div>
         </div>
 
-        <div class="row">
-          <div>
-            <label for="">Mata Pelajaran</label>
-            <select name="mapel" id="mapel">
-              <option selected>Semua Mapel</option>
-              <option>Matematika</option>
-              <option>Penjaskes</option>
-              <option>IPS</option>
-              <option>Bahasa Indonesia</option>
-              <option>IPA</option>
-              <option>Bahasa Inggris</option>
-              <option>Seni Budaya</option>
-              <option>PKN</option>
-            </select>
-          </div>
-          <div>
-            <label for="">Diurut berdasarkan</label>
-            <select name="urutan" id="urutan">
-              <option selected>Jumlah Jawaban</option>
-              <option>Jumlah Like</option>
-              <option>Terbaru</option>
-              <option>Terlama</option>
-            </select>
-          </div>
+        <div class="hasil">
+          <h3>Ditemukan <b>2</b> pertanyaan:</h3>
         </div>
-
-        <br>
-        <br>
-
-        <button> 
-            Search 
-        </button>
       </main>
       <aside class="right">
         <div class="fixed">
-          <div class="row">
+          <div class="flex">
             <a href="./login.html" class="button">Login</a>
             <a href="./daftar.html" class="button sekunder">Daftar</a>
           </div>
@@ -151,5 +162,75 @@
         </div>
       </aside>
     </div>
+
+    <script>
+      const loading = document.querySelector(".loading");
+      const hasil = document.querySelector(".hasil");
+      let error = false;
+
+      function search() {
+        loading.style.display = "flex";
+        hasil.style.display = "none";
+
+        setTimeout(() => {
+          hasil.style.display = "block";
+          loading.style.display = "none";
+
+          if (error) {
+            document.querySelector(".hasil").innerHTML = e;
+          } else {
+            const s =
+              "<h3>Ditemukan <b>3</b> pertanyaan:</h3>" + pertanyaan.repeat(3);
+            document.querySelector(".hasil").innerHTML = s;
+          }
+
+          error = !error;
+        }, 1000);
+      }
+
+      const pertanyaan = `<article>
+          <div class="tags flex">
+            <span>IPS</span>
+            <span>Kelas 6</span>
+            <span>+5 poin</span>
+          </div>
+          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+
+          <div class="flex">
+            <div class="poster flex">
+              <img
+                src="https://ui-avatars.com/api/?name=M+T&size=120&bold=true&color=ffffff&background=A50AB3"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>5 hari lalu</p>
+              </div>
+            </div>
+
+            <div class="statistik">
+              <div class="flex">
+                <i class="material-icons-outlined">thumb_up</i>
+                15
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">forum</i>
+                23
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">bookmark</i>
+              </div>
+              <div class="flex">
+                <i class="material-icons-outlined">share</i>
+              </div>
+            </div>
+          </div>
+        </article>`;
+
+      const e = `<div class="error">
+        <img src="./gambar/404.jfif">
+        <h3>Tidak menemukan apapun</h3>
+        </div>`;
+    </script>
   </body>
 </html>

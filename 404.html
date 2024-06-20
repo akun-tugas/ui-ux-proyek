@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yuk Kita Jawab</title>
+    <title>404 Not Found</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
@@ -18,17 +18,26 @@
     />
     
     <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/mapel.css" />
+    <style>
+      main .flex {
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
     <nav id="mobile-nav">
       <a href="./index.html" class="material-icons-outlined"> home </a>
-            <a href="./profil.html" class="material-icons-outlined"> account_circle </a>
-      <a href="./buat_pertanyaan.html" class="material-icons-outlined"> rate_review </a>
-      <a href="./search.html" class="material-icons-outlined"> search </a>
-      <a href="./mapel.html" class="material-icons-outlined active">
-        category
+      <a href="./profil.html" class="material-icons-outlined">
+        account_circle
       </a>
+      <a href="./buat_pertanyaan.html" class="material-icons-outlined">
+        rate_review
+      </a>
+      <a href="./search.html" class="material-icons-outlined"> search </a>
+      <a href="./mapel.html" class="material-icons-outlined"> category </a>
     </nav>
 
     <div class="layout">
@@ -51,7 +60,7 @@
             <i class="material-icons-outlined">search</i>
             Search
           </a>
-          <a href="./mapel.html" class="text-box flex active">
+          <a href="./mapel.html" class="text-box flex">
             <i class="material-icons-outlined">category</i>
             Mata Pelajaran
           </a>
@@ -70,60 +79,18 @@
       </aside>
       <main>
         <h1>
-          <span style="color: var(--primer)">Mata </span>
-          <span style="color: var(--sekunder)">Pelajaran </span> 📓
+          <span style="color: var(--primer)">404 </span>
+          <span style="color: var(--sekunder)">Not Found </span> ❌
         </h1>
 
-        <div class="mapel">
-          <a class="text-box flex">
-            <img src="gambar/mtk.png" alt="ikon mata pelajaran Matematika" />
-            <b>Matematika</b>
-            <span>20+ pertanyaan</span>
-          </a>
-          <a class="text-box flex">
-            <img src="gambar/ips.png" alt="ikon mata pelajaran IPS" />
-            <b>IPS</b>
-            <span>18+ pertanyaan</span>
-          </a>
-          <a class="text-box flex">
-            <img src="gambar/ipa.png" alt="ikon mata pelajaran Matematika" />
-            <b>IPA</b>
-            <span>31+ pertanyaan</span>
-          </a>
-          <a class="text-box flex">
-            <img
-              src="gambar/penjaskes.png"
-              alt="ikon mata pelajaran Matematika"
-            />
-            <b>Penjaskes</b>
-            <span>15+ pertanyaan</span>
-          </a>
-          <a class="text-box flex">
-            <img src="gambar/indo.png" alt="ikon mata pelajaran IPS" />
-            <b>Bahasa Indonesia</b>
-            <span>30+ pertanyaan</span>
-          </a>
-          <a class="text-box flex">
-            <img src="gambar/inggris.png" alt="ikon mata pelajaran IPS" />
-            <b>Bahasa Inggris</b>
-            <span>27+ pertanyaan</span>
-          </a>
-          <a class="text-box flex">
-            <img src="gambar/pkn.png" alt="ikon mata pelajaran Matematika" />
-            <b>PKN</b>
-            <span>20+ pertanyaan</span>
-          </a>
-          <a class="text-box flex">
-            <img src="gambar/ips.png" alt="ikon mata pelajaran IPS" />
-            <b>Lainnya</b>
-            <span>29+ pertanyaan</span>
+        <div class="flex">
+          <img src="./gambar/404.jfif" alt="404" width="200px" />
+          <h2>Sepertinya kamu tersesat</h2>
+
+          <a href="./">
+            <button>Kembali ke beranda</button>
           </a>
         </div>
-
-        <br />
-        <br />
-        <br />
-        <br />
       </main>
       <aside class="right">
         <div class="fixed">

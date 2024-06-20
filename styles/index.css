@@ -2,69 +2,29 @@
   columns: 2;
 
   img {
-    width: 100px; 
-    border-radius: 50%;
-  }
-
-  a {  
-    -webkit-column-break-inside: avoid;
-    gap: 0rem;
-    flex-direction: column;
-    margin-bottom: 1rem; 
-    padding-bottom: 1rem;
-
-    > :last-child {
-        opacity: 0.5;
-        font-size: 0.8rem;
-    }
-  }
-}
-
-.tags {
-  font-size: 0.9rem;
-
-  > * {
-    border-radius: 8px;
-    padding: 0.1rem 1rem;
-    background-color: color-mix(in srgb, var(--primer), white 80%);
-    color: var(--primer);
-  }
-
-  > :last-of-type {
-    background-color: transparent;
-    color: var(--sekunder);
-  }
-}
-
-.poster {
-  align-items: start;
-
-  img {
-    width: 45px;
-    height: 45px;
+    width: 100px;
     border-radius: 50%;
   }
 
   a {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: black;
-  }
+    -webkit-column-break-inside: avoid;
+    gap: 0rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 
-  p {
-    font-size: 0.8rem;
+    > :last-child {
+      opacity: 0.5;
+      font-size: 0.8rem;
+    }
   }
 }
 
-.statistik {
-  opacity: 0.75;
-  display: flex;
-  gap: 0.8rem;
-  font-size: 0.9rem;
 
-  > * {
-    gap: 0.5rem;
-    color: color-mix(in srgb, black, transparent 50%);
-    cursor: pointer;
-  }
+#via-gambar { 
+  border-radius: 8px;
+  margin-top: 1rem;
+  width: 100% ;
+  height: 300px;
+  object-fit: cover;
 }

@@ -16,52 +16,58 @@
       name="description"
       content="Demo aplikasi tugas UI/UX dari kelompok Yuk Kita Jawab"
     />
-    <script src="./script.js" defer></script>
+    
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <nav id="mobile-nav">
       <a href="./index.html" class="material-icons active"> home </a>
-      <a href="" class="material-icons-outlined"> account_circle </a>
-      <a href="" class="material-icons-outlined"> rate_review </a>
+      <a href="./profil.html" class="material-icons-outlined">
+        account_circle
+      </a>
+      <a href="./buat_pertanyaan.html" class="material-icons-outlined">
+        rate_review
+      </a>
       <a href="./search.html" class="material-icons-outlined"> search </a>
       <a href="./mapel.html" class="material-icons-outlined"> category </a>
     </nav>
 
-    <div class="wrapper">
+    <div class="layout">
       <aside class="left">
         <nav id="side-nav">
-          <div class="row">
+          <div class="flex">
             <img src="gambar/logo.jpg" alt="Logo" />
             <h3>Yuk Kita Jawab</h3>
           </div>
 
-          <a href="./index.html" class="text-box row active">
+          <a href="./index.html" class="text-box flex active">
             <i class="material-icons">home</i>
             Home
           </a>
-          <a href="" class="text-box row">
+          <a href="./profil.html" class="text-box flex">
             <i class="material-icons">account_circle</i>
             Profil
           </a>
-          <a href="./search.html" class="text-box row">
+          <a href="./search.html" class="text-box flex">
             <i class="material-icons-outlined">search</i>
             Search
           </a>
-          <a href="./mapel.html" class="text-box row">
+          <a href="./mapel.html" class="text-box flex">
             <i class="material-icons-outlined">category</i>
             Mata Pelajaran
           </a>
-          <a href="" class="text-box row">
-            <i class="material-icons-outlined">info</i>
-            Tentang Kami
+          <a href="./admin.html" class="text-box flex">
+            <i class="material-icons-outlined">monitor</i>
+            Dashboard Admin
           </a>
 
-          <button class="sekunder row">
-            <i class="material-icons-outlined">rate_review</i>
-            Buat Pertanyaan
-          </button>
+          <a href="./buat_pertanyaan.html">
+            <button class="sekunder flex">
+              <i class="material-icons-outlined">rate_review</i>
+              Buat Pertanyaan
+            </button>
+          </a>
         </nav>
       </aside>
       <main>
@@ -72,52 +78,55 @@
 
         <h4>Mapel paling populer minggu ini</h4>
         <div class="mapel">
-          <a class="text-box row">
+          <a class="text-box flex">
             <img src="gambar/mtk.png" alt="ikon mata pelajaran Matematika" />
-            <span>Matematika</span>
+            <b>Matematika</b>
             <span>20+ pertanyaan</span>
           </a>
-          <a class="text-box row">
+          <a class="text-box flex">
             <img src="gambar/ips.png" alt="ikon mata pelajaran IPS" />
-            <span>IPS</span>
+            <b>IPS</b>
             <span>18+ pertanyaan</span>
           </a>
         </div>
 
         <h4>Pertanyaan trending minggu ini</h4>
+
         <article>
-          <div class="tags row">
+          <div class="tags flex">
             <span>IPS</span>
             <span>Kelas 6</span>
             <span>+5 poin</span>
           </div>
-          <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          <a href="./pertanyaan.html">
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </a>
 
-          <div class="row">
-            <div class="poster row">
+          <div class="flex">
+            <div class="poster flex">
               <img
                 src="https://ui-avatars.com/api/?name=M+T&size=120&bold=true&color=ffffff&background=A50AB3"
                 alt="Foto profil poster"
               />
               <div>
-                <a>Nama Pengguna</a>
+                <a href="./profil.html">Nama Pengguna</a>
                 <p>5 hari lalu</p>
               </div>
             </div>
 
             <div class="statistik">
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">thumb_up</i>
                 15
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">forum</i>
                 23
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">bookmark</i>
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">share</i>
               </div>
             </div>
@@ -125,15 +134,15 @@
         </article>
 
         <article>
-          <div class="tags row">
+          <div class="tags flex">
             <span>Seni Budaya</span>
             <span>Kelas 4</span>
             <span>+3 poin</span>
           </div>
           <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
 
-          <div class="row">
-            <div class="poster row">
+          <div class="flex">
+            <div class="poster flex">
               <img
                 src="https://ui-avatars.com/api/?name=R+M&size=120&bold=true&color=ffffff&background=546E1D"
                 alt="Foto profil poster"
@@ -145,18 +154,18 @@
             </div>
 
             <div class="statistik">
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">thumb_up</i>
                 11
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">forum</i>
                 16
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">bookmark</i>
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">share</i>
               </div>
             </div>
@@ -164,15 +173,22 @@
         </article>
 
         <article>
-          <div class="tags row">
+          <div class="tags flex">
             <span>IPA</span>
             <span>Kelas 6</span>
             <span>+4 poin</span>
           </div>
+
+          <img
+            src="./gambar/buku.png"
+            alt="gambar pertanyaan"
+            id="via-gambar"
+          />
+
           <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
 
-          <div class="row">
-            <div class="poster row">
+          <div class="flex">
+            <div class="poster flex">
               <img
                 src="https://ui-avatars.com/api/?name=A+C&size=120&bold=true&color=ffffff&background=145062"
                 alt="Foto profil poster"
@@ -184,18 +200,18 @@
             </div>
 
             <div class="statistik">
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">thumb_up</i>
                 8
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">forum</i>
                 4
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">bookmark</i>
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">share</i>
               </div>
             </div>
@@ -210,7 +226,7 @@
         <h4>Pertanyaan terbaru</h4>
 
         <article>
-          <div class="tags row">
+          <div class="tags flex">
             <span>Matematika</span>
             <span>Kelas 6</span>
             <span>Belum Dijawab</span>
@@ -218,8 +234,8 @@
           </div>
           <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
 
-          <div class="row">
-            <div class="poster row">
+          <div class="flex">
+            <div class="poster flex">
               <img
                 src="https://ui-avatars.com/api/?name=I+K&size=120&bold=true&color=ffffff&background=BD3E54"
                 alt="Foto profil poster"
@@ -231,18 +247,18 @@
             </div>
 
             <div class="statistik">
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">thumb_up</i>
                 0
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">forum</i>
                 0
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">bookmark</i>
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">share</i>
               </div>
             </div>
@@ -250,7 +266,7 @@
         </article>
 
         <article>
-          <div class="tags row">
+          <div class="tags flex">
             <span>Pendidikan Agama</span>
             <span>Kelas 5</span>
             <span>Belum Dijawab</span>
@@ -258,8 +274,8 @@
           </div>
           <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
 
-          <div class="row">
-            <div class="poster row">
+          <div class="flex">
+            <div class="poster flex">
               <img
                 src="https://ui-avatars.com/api/?name=F+L&size=120&bold=true&color=ffffff&background=17398C"
                 alt="Foto profil poster"
@@ -271,18 +287,18 @@
             </div>
 
             <div class="statistik">
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">thumb_up</i>
                 0
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">forum</i>
                 0
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">bookmark</i>
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">share</i>
               </div>
             </div>
@@ -290,7 +306,7 @@
         </article>
 
         <article>
-          <div class="tags row">
+          <div class="tags flex">
             <span>IPS</span>
             <span>Kelas 4</span>
             <span>Belum Dijawab</span>
@@ -298,8 +314,8 @@
           </div>
           <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
 
-          <div class="row">
-            <div class="poster row">
+          <div class="flex">
+            <div class="poster flex">
               <img
                 src="https://ui-avatars.com/api/?name=Z+E&size=120&bold=true&color=ffffff&background=D651F9"
                 alt="Foto profil poster"
@@ -311,18 +327,18 @@
             </div>
 
             <div class="statistik">
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">thumb_up</i>
                 0
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">forum</i>
                 0
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">bookmark</i>
               </div>
-              <div class="row">
+              <div class="flex">
                 <i class="material-icons-outlined">share</i>
               </div>
             </div>
@@ -336,7 +352,7 @@
       </main>
       <aside class="right">
         <div class="fixed">
-          <div class="row">
+          <div class="flex">
             <a href="./login.html" class="button">Login</a>
             <a href="./daftar.html" class="button sekunder">Daftar</a>
           </div>

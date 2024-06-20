@@ -1,0 +1,36 @@
+main {
+  input,
+  textarea {
+    margin-bottom: 0.5rem;
+  }
+
+  textarea {
+    min-height: 200px;
+  }
+
+  .media {
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+
+    input[type="file"] {
+      display: none;
+    }
+  }
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 6fr 6fr;
+  }
+
+  button {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+}

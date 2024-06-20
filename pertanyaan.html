@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuk Kita Jawab</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Demo aplikasi tugas UI/UX dari kelompok Yuk Kita Jawab"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/pertanyaan.css" />
+  </head>
+  <body>
+    <nav id="mobile-nav">
+      <a href="./index.html" class="material-icons-outlined"> home </a>
+      <a href="./profil.html" class="material-icons-outlined">
+        account_circle
+      </a>
+      <a href="./buat_pertanyaan.html" class="material-icons-outlined">
+        rate_review
+      </a>
+      <a href="./search.html" class="material-icons-outlined"> search </a>
+      <a href="./mapel.html" class="material-icons-outlined"> category </a>
+    </nav>
+
+    <div class="layout">
+      <aside class="left">
+        <nav id="side-nav">
+          <div class="flex">
+            <img src="gambar/logo.jpg" alt="Logo" />
+            <h3>Yuk Kita Jawab</h3>
+          </div>
+
+          <a href="./index.html" class="text-box flex">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+          <a href="./profil.html" class="text-box flex">
+            <i class="material-icons">account_circle</i>
+            Profil
+          </a>
+          <a href="./search.html" class="text-box flex">
+            <i class="material-icons-outlined">search</i>
+            Search
+          </a>
+          <a href="./mapel.html" class="text-box flex">
+            <i class="material-icons-outlined">category</i>
+            Mata Pelajaran
+          </a>
+          <a href="./admin.html" class="text-box flex">
+            <i class="material-icons-outlined">monitor</i>
+            Dashboard Admin
+          </a>
+
+          <a href="./buat_pertanyaan.html">
+            <button class="sekunder flex">
+              <i class="material-icons-outlined">rate_review</i>
+              Buat Pertanyaan
+            </button>
+          </a>
+        </nav>
+      </aside>
+      <main>
+        <h1 style="color: var(--sekunder)">Pertanyaan</h1>
+
+        <h3>Apa yang dimaksud dengan... ?</h3>
+
+        <div class="profil">
+          <img
+            src="https://ui-avatars.com/api/?name=M+T&size=120&bold=true&color=ffffff&background=A50AB3"
+            alt="foto profil poster"
+            width="50px"
+            height="50px"
+          />
+          <div>
+            <p id="judul"><b>Nama Pengguna</b></p>
+            <p>2 hari yang lalu</p>
+          </div>
+        </div>
+
+        <p id="deskripsi">
+          Deskripsi: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Itaque eaque, incidunt inventore cupiditate asperiores et alias
+          veritatis sapiente libero dolorum necessitatibus voluptatum
+        </p>
+
+        <div class="statistik-post">
+          <div class="flex">
+            <i class="material-icons-outlined">thumb_up</i>
+            15
+          </div>
+          <div class="flex">
+            <i class="material-icons-outlined">forum</i>
+            23
+          </div>
+          <div class="flex">
+            <i class="material-icons-outlined">bookmark</i>
+          </div>
+          <div class="flex">
+            <i class="material-icons-outlined">share</i>
+          </div>
+        </div>
+
+        <hr />
+
+        <form>
+          <textarea
+            name="jawaban"
+            id="jawaban"
+            placeholder="Masukan jawaban mu disini"
+            onkeydown=""
+          ></textarea>
+
+          <button type="button" onclick="postJawaban()">
+            Post Jawaban Kamu
+          </button>
+        </form>
+
+        <p id="total-jawaban"><b>2 Jawaban</b></p>
+
+        <div class="list-jawaban">
+          <article class="jawaban">
+            <div class="statistik">
+              <p>Jawaban Terbaik</p>
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="poster flex">
+              <img src="./gambar/user.jpg" alt="Foto profil poster" />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>5 hari lalu</p>
+              </div>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+              quasi
+            </p>
+          </article>
+
+          <article class="jawaban">
+            <div class="statistik">
+              <span>⭐⭐</span>
+            </div>
+
+            <div class="poster flex">
+              <img
+                src="https://ui-avatars.com/api/?name=R+M&size=120&bold=true&color=ffffff&background=546E1D"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>5 hari lalu</p>
+              </div>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+              quasi
+            </p>
+          </article>
+        </div>
+
+        <br />
+        <br />
+      </main>
+      <aside class="right">
+        <div class="fixed">
+          <div class="flex">
+            <a href="./login.html" class="button">Login</a>
+            <a href="./daftar.html" class="button sekunder">Daftar</a>
+          </div>
+
+          <h5>Pertanyaan Trending</h5>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <h5>Pertanyaan Terbaru</h5>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+
+          <article>
+            <p>Apa yang dimaksud dengan Lorem Ipsum Dolor Sit Amet ?</p>
+          </article>
+        </div>
+      </aside>
+    </div>
+
+    <script>
+      const listJawaban = document.querySelector(".list-jawaban");
+      const jawaban = document.querySelector("textarea");
+      const totalJawab = document.querySelector("#total-jawaban")
+
+      function postJawaban() {
+        const e = document.createElement("article");
+        e.setAttribute("class", "jawaban");
+        e.innerHTML = ` 
+            <div class="statistik">
+              <p style="background-color: rgba(0,0,0,0.1); color: black">Jawaban Baru</p>
+              <span>⭐</span>
+            </div>
+
+            <div class="poster flex">
+              <img
+                src="https://ui-avatars.com/api/?name=A+J&size=120&bold=true&color=ffffff&background=546E1D"
+                alt="Foto profil poster"
+              />
+              <div>
+                <a>Nama Pengguna</a>
+                <p>Sekarang</p>
+              </div>
+            </div>
+
+            <p>${jawaban.value}</p> `;
+
+        listJawaban.prepend(e);
+        jawaban.value = "";
+
+        totalJawab.innerHTML = `<b>${listJawaban.children.length} Jawabaan</b>`
+      }
+    </script>
+  </body>
+</html>
